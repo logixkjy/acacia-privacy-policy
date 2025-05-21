@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const userLang = navigator.language || navigator.userLanguage;
+    const isKorean = userLang.startsWith('ko');
+    if (isKorean) {
+      window.location.href = "privacy.html";
+    } else {
+      window.location.href = "privacy_mongolian.html";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting based on your language...</p>
+</body>
+</html>
